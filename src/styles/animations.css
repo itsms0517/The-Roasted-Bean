@@ -1,0 +1,137 @@
+/* ==========================================================================
+   THE ROASTED BEAN — ANIMATIONS & CINEMATIC TRANSITIONS
+   ========================================================================== */
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes floatParticles {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes steamRise {
+  0% {
+    transform: translateY(0) scaleX(1) scaleY(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.55;
+  }
+  60% {
+    opacity: 0.35;
+    transform: translateY(-40px) scaleX(1.3) scaleY(1.2) translateX(4px);
+  }
+  100% {
+    transform: translateY(-90px) scaleX(1.8) scaleY(1.5) translateX(-6px);
+    opacity: 0;
+  }
+}
+
+@keyframes slowPan {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.05) translateY(-10px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s infinite ease-in-out;
+}
+
+.animate-float {
+  animation: floatParticles 6s infinite ease-in-out;
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    #F3EBDD 0%,
+    #D9B58A 25%,
+    #fff 50%,
+    #D9B58A 75%,
+    #F3EBDD 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 8s linear infinite;
+}
+
+/* Perspective tilt container */
+.tilt-card-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Section Transitions */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Split panel styles */
+.split-panel {
+  position: relative;
+  overflow: hidden;
+  transition: flex 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s ease;
+}
+
+.split-panel .panel-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+}
+
+.split-panel:hover .panel-bg {
+  transform: scale(1.06);
+}
+
+.split-panel .panel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(23, 17, 14, 0.3) 0%, rgba(23, 17, 14, 0.85) 80%, rgba(23, 17, 14, 0.98) 100%);
+  transition: background 0.6s ease;
+}
+
+.split-panel:hover .panel-overlay {
+  background: linear-gradient(180deg, rgba(23, 17, 14, 0.15) 0%, rgba(23, 17, 14, 0.75) 70%, rgba(23, 17, 14, 0.95) 100%);
+}

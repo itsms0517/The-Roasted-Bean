@@ -1,0 +1,26 @@
+[
+  {
+    "id": "TRB-5799",
+    "name": "Jane Doe",
+    "phone": null,
+    "email": null,
+    "guests": "2 Guests",
+    "date": "2026-11-22",
+    "time": "Evening Dinner (17:30 - 21:00)",
+    "notes": "",
+    "status": "CONFIRMED",
+    "createdAt": "2026-11-22T11:45:03.367Z"
+  },
+  {
+    "id": "TRB-8183",
+    "name": "sdefsdefsdfvsdv",
+    "phone": null,
+    "email": null,
+    "guests": "3 - 4 Guests",
+    "date": "2026-11-22",
+    "time": "Morning (08:00 - 11:30)",
+    "notes": "",
+    "status": "CONFIRMED",
+    "createdAt": "2026-11-22T11:47:14.624Z"
+  }
+]

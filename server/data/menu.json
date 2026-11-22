@@ -1,0 +1,174 @@
+{
+  "coffees": [
+    {
+      "id": "espresso",
+      "name": "Single Origin Espresso",
+      "tagline": "Dense Crema & Vibrant Citrus",
+      "price": "$4.50",
+      "roast": "Dark Roast",
+      "origin": "Yirgacheffe, Ethiopia",
+      "process": "Natural Washed",
+      "notes": ["Bergamot", "Dark Cocoa", "Candied Orange"],
+      "description": "Pulled at 9 bars of pressure with precise 28-second extraction. Delivers a viscous caramel crema, bright mandarin acidity, and a lingering bittersweet cocoa finish.",
+      "image": "/assets/images/espresso-splash.jpg",
+      "details": {
+        "elevation": "1,950m",
+        "varietal": "Heirloom",
+        "caffeine": "68mg"
+      }
+    },
+    {
+      "id": "cappuccino",
+      "name": "Velvet Cappuccino",
+      "tagline": "Equal Parts Harmony",
+      "price": "$5.50",
+      "roast": "Medium Dark",
+      "origin": "Antigua, Guatemala",
+      "process": "Washed",
+      "notes": ["Toasted Hazelnut", "Brown Butter", "Milk Chocolate"],
+      "description": "Double ristretto shot enveloped in silky microfoam steamed to exactly 65°C. Flawless symmetry of dark espresso punch and natural milk sweetness.",
+      "image": "/assets/images/cappuccino.jpg",
+      "details": {
+        "elevation": "1,600m",
+        "varietal": "Bourbon & Caturra",
+        "caffeine": "130mg"
+      }
+    },
+    {
+      "id": "latte",
+      "name": "Artisanal Café Latte",
+      "tagline": "Silky Microfoam & Caramel Swirl",
+      "price": "$6.00",
+      "roast": "Medium Roast",
+      "origin": "Huila, Colombia",
+      "process": "Honey Process",
+      "notes": ["Caramel Crisp", "Vanilla Bean", "Creamy Nougat"],
+      "description": "Rich espresso poured over textured whole milk, adorned with hand-poured free-pour rosetta latte art. Warm, enveloping, and comforting.",
+      "image": "/assets/images/latte-art.jpg",
+      "details": {
+        "elevation": "1,800m",
+        "varietal": "Castillo",
+        "caffeine": "130mg"
+      }
+    },
+    {
+      "id": "americano",
+      "name": "Long Black Americano",
+      "tagline": "Clean Profile & Deep Clarity",
+      "price": "$4.75",
+      "roast": "Medium Roast",
+      "origin": "Tarrazu, Costa Rica",
+      "process": "Washed",
+      "notes": ["Crisp Apple", "Cane Sugar", "Almond"],
+      "description": "Double espresso extracted directly over 92°C reverse-osmosis filtered water. Preserves delicate volatile aromatics and golden crema ring.",
+      "image": "/assets/images/ceramic-cup.jpg",
+      "details": {
+        "elevation": "1,700m",
+        "varietal": "Catuai",
+        "caffeine": "130mg"
+      }
+    },
+    {
+      "id": "mocha",
+      "name": "Valrhona Dark Mocha",
+      "tagline": "Single Origin Dark Chocolate Ganache",
+      "price": "$6.50",
+      "roast": "Dark Roast",
+      "origin": "Minas Gerais, Brazil",
+      "process": "Natural Pulped",
+      "notes": ["70% Guanaja Chocolate", "Roasted Walnut", "Smoked Toffee"],
+      "description": "Melted French Valrhona 70% dark chocolate ganache blended into freshly extracted espresso and velvety steamed milk, topped with raw cocoa dust.",
+      "image": "/assets/images/mocha.jpg",
+      "details": {
+        "elevation": "1,200m",
+        "varietal": "Mundo Novo",
+        "caffeine": "135mg"
+      }
+    },
+    {
+      "id": "cold-coffee",
+      "name": "24-Hour Nitro Cold Brew",
+      "tagline": "Steeped Slow & Nitrogen Infused",
+      "price": "$6.00",
+      "roast": "Specialty Blend",
+      "origin": "Sumatra & Kenya Blend",
+      "process": "Cold Maceration",
+      "notes": ["Black Cherry", "Dark Molasses", "Bourbon Oak"],
+      "description": "Steeped for 24 continuous hours in cold ambient temperature, then keg-conditioned and infused with pure food-grade nitrogen for a cascading Guinness-like head.",
+      "image": "/assets/images/cold-coffee.jpg",
+      "details": {
+        "elevation": "1,500m - 2,000m",
+        "varietal": "SL28 & Typica",
+        "caffeine": "195mg"
+      }
+    }
+  ],
+  "foods": [
+    {
+      "id": "pizza",
+      "category": "Pizza",
+      "title": "Artisanal Wood-Fired Pizza",
+      "subtitle": "72-Hour Fermented Sourdough",
+      "price": "$18.50",
+      "description": "Slow-fermented sourdough crust blistered at 900°F in our stone oven. Layered with San Marzano tomato reduction, fresh fior di latte mozzarella, artisanal crisp pepperoni, and hot chili-infused honey.",
+      "image": "/assets/images/pizza-artisan.jpg",
+      "badge": "Signature Specialty",
+      "aspect": "wide"
+    },
+    {
+      "id": "burger",
+      "category": "Burgers",
+      "title": "Truffle Brioche Smash Burger",
+      "subtitle": "Double Angus Beef & Smoked Gouda",
+      "price": "$16.00",
+      "description": "Two smashed prime Angus patties with crispy lacy edges, smoked gouda, balsamic caramelized onions, and house black truffle aioli on a toasted buttered brioche bun.",
+      "image": "/assets/images/burger.jpg",
+      "badge": "House Favorite",
+      "aspect": "standard"
+    },
+    {
+      "id": "sandwich",
+      "category": "Sandwiches",
+      "title": "Prosciutto & Burrata Panini",
+      "subtitle": "Grilled Artisan Ciabatta",
+      "price": "$14.50",
+      "description": "Aged 18-month Prosciutto di Parma, creamy Pugliese burrata, wild baby arugula, and heirloom tomato pesto pressed hot between golden toasted sourdough ciabatta.",
+      "image": "/assets/images/sandwich.jpg",
+      "badge": "Craft Deli",
+      "aspect": "standard"
+    },
+    {
+      "id": "garlic-bread",
+      "category": "Sides",
+      "title": "Roasted Garlic Herb Batard",
+      "subtitle": "Whipped Confit Butter",
+      "price": "$9.50",
+      "description": "Crusty rustic baguette infused with sweet roasted garlic cloves, parmigiano-reggiano, fresh Italian parsley, and sea salt flakes.",
+      "image": "/assets/images/garlic-bread.jpg",
+      "badge": "Warm Shareable",
+      "aspect": "standard"
+    },
+    {
+      "id": "fries",
+      "category": "Sides",
+      "title": "Rosemary Truffle Pommes Frites",
+      "subtitle": "Hand-Cut Double Fried",
+      "price": "$8.50",
+      "description": "Hand-cut Idaho russet potatoes double fried to golden perfection, tossed with white truffle oil, grated pecorino, and garden rosemary.",
+      "image": "/assets/images/fries.jpg",
+      "badge": "Crispy Side",
+      "aspect": "standard"
+    },
+    {
+      "id": "dessert",
+      "category": "Desserts",
+      "title": "Espresso Bean Tiramisu & Fondant",
+      "subtitle": "Dark Roast Valrhona Confection",
+      "price": "$11.00",
+      "description": "Savoiardi biscuits soaked in our house ristretto and aged rum, folded into silky mascarpone cream and finished with melted molten dark chocolate core.",
+      "image": "/assets/images/dessert.jpg",
+      "badge": "Sweet Finish",
+      "aspect": "wide"
+    }
+  ]
+}
