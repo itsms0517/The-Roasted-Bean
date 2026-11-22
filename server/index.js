@@ -157,6 +157,15 @@ app.post('/api/orders', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`[The Roasted Bean API] Server running on http://localhost:${PORT}`);
+// 6. Serve Production Frontend Static Assets
+const distPath = path.join(__dirname, '..', 'dist');
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+}
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`[The Roasted Bean] Server running on http://0.0.0.0:${PORT}`);
 });
